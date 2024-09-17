@@ -1,11 +1,8 @@
-
-// Sélectionner les éléments du DOM
 const eventTypeElem = document.getElementById('event-type');
 const positionElem = document.getElementById('position');
 const canvas = document.getElementById('draw-canvas');
 const ctx = canvas.getContext('2d');
 
-// Variables pour le dessin
 let drawing = false;
 
 // Fonction pour mettre à jour le type d'événement et la position
