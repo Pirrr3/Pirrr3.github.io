@@ -1,4 +1,3 @@
-// scripts/script.js
 
 function updateDisplay(idPrefix, position) {
     document.getElementById(idPrefix + '-lat').textContent = 'Latitude : ' + position.coords.latitude;
