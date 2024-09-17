@@ -1,5 +1,6 @@
 const eventTypeElem = document.getElementById('event-type');
-const positionElem = document.getElementById('position');
+const positionElemx = document.getElementById('positionx');
+const positionElemy = document.getElementById('positiony');
 const canvas = document.getElementById('draw-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -7,7 +8,8 @@ let drawing = false;
 
 function updateEventInfo(eventType, x, y) {
     eventTypeElem.textContent = 'Type d\'événement : ' + eventType;
-    positionElem.textContent = `Position : x: ${x}, y: ${y}`;
+    positionElemx.textContent = `Positionx : x: ${x}`;
+    positionElemy.textContent = `Positiony : y: ${y}`;
 }
 
 function draw(x, y) {
