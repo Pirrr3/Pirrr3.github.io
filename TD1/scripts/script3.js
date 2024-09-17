@@ -8,8 +8,8 @@ let drawing = false;
 
 function updateEventInfo(eventType, x, y) {
     eventTypeElem.textContent = 'Type d\'événement : ' + eventType;
-    positionElemx.textContent = `Positionx : x: ${x}`;
-    positionElemy.textContent = `Positiony : y: ${y}`;
+    positionElemx.textContent = `Position x : ${x}`;
+    positionElemy.textContent = `Position y : ${y}`;
 }
 
 function draw(x, y) {
