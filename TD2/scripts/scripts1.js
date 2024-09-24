@@ -17,21 +17,10 @@ function getCurrentPosition() {
     }
 }
 
-function watchPosition() {
-    if (navigator.geolocation) {
-        navigator.geolocation.watchPosition((position) => {
-            updateDisplay('watch', position);
-        }, (error) => {
-            console.error('Erreur de géolocalisation :', error);
-        });
-    } else {
-        alert('Géolocalisation non supportée par ce navigateur.');
-    }
-}
 
 document.addEventListener('DOMContentLoaded', function() {
     getCurrentPosition();
-    watchPosition();
+    showMap();
 });
 
 
