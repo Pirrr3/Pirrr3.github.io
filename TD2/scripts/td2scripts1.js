@@ -21,4 +21,15 @@ function showMap(position) {
 
     const niceMarker = L.marker(niceCoords).addTo(map);
     niceMarker.bindPopup("<b>Nice - Centre Ville</b>").openPopup();
+
+
+    var polygon = L.polygon([
+        [25.789106, -80.226529],
+        [18.4663188, -66.1057427],
+        [32.294887, -64.781380]
+    ],
+    {color: 'red'}).addTo(map);
+
+
+
 }
